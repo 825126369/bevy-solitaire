@@ -3,7 +3,7 @@ use bevy::prelude::*;
 fn main() {
     println!("Hello, world!");
 
-    let mut app = App::new();
+    let mut app: App = App::new();
     app.add_plugins(DefaultPlugins).add_systems(Startup, setup);
     app.run();
 }
