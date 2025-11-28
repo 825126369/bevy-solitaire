@@ -15,3 +15,9 @@
 4: crates.io 是 Rust 的官方公共包注册中心.
 
 5： #[cfg(not(target_arch = "wasm32"))] 是 条件编译属性，告诉编译器：「只在非 WASM 架构时才编译下面的代码」。
+
+6：..default() 是 Rust 里 结构体更新语法（struct update syntax） 的一部分，和 Default trait 配合使用，表示：“把剩下的字段全部按 Default::default() 来填充”。
+
+7： mut 是 “可变” 的标记
+
+8： #[derive(Component)] 是 Bevy 的宏，标记一个结构体是组件，才能挂到实体上被系统查询。
